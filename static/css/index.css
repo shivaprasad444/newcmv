@@ -1,0 +1,503 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/*------- Hero -------*/
+.hero-section {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  color: #1F2937;
+  margin-bottom: 0.5em;
+}
+.hero-text p {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 1em;
+}
+.explore-btn {
+  background-color: #4F46E5;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Highlight */
+.highlight-section {
+  background: #F9FAFB;
+  padding: 60px 20px;
+  text-align: center;
+}
+.highlight-text h2 {
+  font-size: 2rem;
+  color: #1F2937;
+  line-height: 1.2;
+}
+
+/* Industries */
+.industries-section {
+  background: #F8FAFC;
+  padding: 70px 20px;
+}
+.industries-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.industries-container h2 {
+  text-align: center;
+  font-size: 1.9rem;
+  color: #1F2937;
+  margin-bottom: 1em;
+}
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 32px;
+}
+.industry-card {
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #4F46E5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.industry-card:hover {
+  transform: scale(1.05);
+}
+.card-front, .card-back {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: opacity 0.3s;
+  color: white;
+}
+.card-front {
+  background: #4338CA;
+  opacity: 1;
+}
+.card-back {
+  background: #4F46E5;
+  flex-direction: column;
+  opacity: 0;
+}
+.industry-card:hover .card-front {
+  opacity: 0;
+}
+.industry-card:hover .card-back {
+  opacity: 1;
+}
+
+/* Services */
+.services-section {
+  background: #F8FAFC;
+  padding: 80px 20px;
+  text-align: center;
+}
+.services-section h2 {
+  font-size: 2rem;
+  color: #1F2937;
+  margin-bottom: 1em;
+}
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.service-box {
+  width: 300px;
+  height: 360px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  position: relative;
+  transition: transform 0.3s;
+}
+.service-box:hover {
+  transform: scale(1.05);
+}
+.service-box .service-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(79, 70, 229, 0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.service-box:hover .service-overlay {
+  opacity: 1;
+}
+.service-box.consulting {
+  background-image: url('../images/service-consulting.png');
+}
+.service-box.development {
+  background-image: url('../images/service-development.png');
+}
+.service-box.support {
+  background-image: url('../images/service-support.jpeg');
+}
+
+/* Contact */
+.contact-section {
+  background: #ffffff;
+  padding: 70px 20px;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2rem;
+  color: #1F2937;
+  margin-bottom: 1em;
+}
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.contact-section input,
+.contact-section textarea {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 6px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.contact-section textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.contact-section button {
+  background: #4F46E5;
+  color: #fff;
+  padding: 14px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+.contact-section button:hover {
+  opacity: 0.9;
+}
+
+
+/* ------ Footer section ------- */
+
+.footer-container {
+  background-color: #4f46e5; /* same as navbar */
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Top section: fourâ€column layout */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* Each column */
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: #eef2ff;
+}
+
+.footer-column p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #d1d5db;
+}
+
+/* Services list */
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Newsletter form */
+.footer-newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.footer-newsletter-form input[type="email"] {
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.footer-newsletter-form button {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-newsletter-form button:hover {
+  background-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Spacer below top section */
+.footer-top + .footer-bottom {
+  margin-top: 20px;
+}
+
+/* Bottom bar: social icons + copy */
+/* =============================
+   Footer Bottom (Full-Width)
+   ============================= */
+
+/* Remove the centering constraints (max-width, margin) */
+.footer-bottom {
+  width: 100%;                /* span entire viewport */
+  background-color: #f2f5f7;  /* same dark-indigo as before */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  box-sizing: border-box;     /* ensure padding doesnâ€™t add extra width */
+}
+
+/* If you had previously set .footer-bottom with max-width and margin:  */
+/* remove or override those, for example:                          */
+.footer-bottom {
+  max-width: none;
+  margin: 0;
+}
+
+/* The child elements stay as they were: */
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  filter: invert(100%);
+  transition: filter 0.2s ease;
+}
+
+.footer-socials img:hover {
+  filter: invert(70%);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: black;
+}
+
+/* Mobile stack remains the same: */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+/* ------ Navbar -------  */
+
+.navbar {
+  background-color: #4f46e5;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+/* Desktop Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #4f46e5;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 999;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hamburger menu toggle hidden on desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon for mobile */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.menu-icon span {
+  background: white;
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Mobile view */
+@media (max-width: 900px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #4f46e5;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  /* Dropdown stays always visible in mobile view (optional simplified version) */
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+    padding-left: 0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown > .dropbtn::after {
+    content: " ▼";
+  }
+}
+
+

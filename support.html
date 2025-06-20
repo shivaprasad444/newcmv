@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="static/css/services.css">
+
+<!-- Hero Section -->
+<section class="page-hero">
+  <h1>24/7 Technical Support & Maintenance</h1>
+</section>
+
+<!-- Overview -->
+<section class="about-section">
+  <div class="container">
+    <h2>Dedicated Support You Can Trust</h2>
+    <p>
+      Our technical support and maintenance services ensure uninterrupted operations
+      for your digital infrastructure. Whether you need ongoing support, issue resolution,
+      or system monitoring, we’ve got you covered.
+    </p>
+  </div>
+</section>
+
+<!-- Support Details -->
+<section class="services-details">
+  <div class="container">
+
+    <!-- CARD 1 -->
+    <div class="support-card">
+      <div class="support-image">
+        <img src="static/css/support-ticketing.jpg" alt="Ticketing System">
+      </div>
+      <div class="support-text">
+        <h3>Smart Ticketing & Issue Tracking</h3>
+        <p>
+          Efficiently manage and resolve issues with our robust ticketing systems. Every 
+          request is tracked, prioritized, and resolved quickly by our skilled team.
+        </p>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="support-card reverse">
+      <div class="support-text">
+        <h3>Proactive Monitoring & Alerts</h3>
+        <p>
+          Our team sets up real-time monitoring tools that detect and report anomalies 
+          before they escalate—ensuring business continuity and reduced downtime.
+        </p>
+      </div>
+      <div class="support-image">
+        <img src="static/css/support-ticketing.jpg" alt="Monitoring Services">
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="support-card">
+      <div class="support-image">
+        <img src="static/css/support-ticketing.jpg" alt="Dedicated Support Team">
+      </div>
+      <div class="support-text">
+        <h3>Dedicated Support Engineers</h3>
+        <p>
+          Partner with our experienced support engineers who provide tailored assistance, 
+          scheduled maintenance, and rapid resolution to keep your systems running smoothly.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

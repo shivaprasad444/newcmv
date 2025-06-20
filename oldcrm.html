@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="static/css/products.css">
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+    <h1>IMS - Inventory Management System</h1>
+    <p>Track, forecast &amp; automate your entire supply chain in real time.</p>
+    <a href="#" class="btn primary">Try Demo</a>
+  </div>
+  </div>
+</section>
+
+<!-- DESCRIPTION -->
+<section class="description">
+  <div class="container">
+    <p>
+      Our Inventory Management System (IMS) gives you a single source of truth for every item from purchase to production to point of sale. With real time updates, advanced reporting, and automated workflows, you'll eliminate stockouts, reduce costs, and accelerate fulfillment.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="ims-features">
+  <div class="container">
+
+    <div class="feature-card">
+      <div class="picture-container">
+        <img src="{% static 'images/ims-item-catalog.jpg' %}" alt="Item Catalog">
+      </div>
+      <div class="text-content">
+        <h3>Item Catalog</h3>
+        <p>Maintain complete item details with barcodes, SKUs, and custom attributes.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="picture-container">
+        <img src="{% static 'images/ims-realtime-tracking.png' %}" alt="Real Time Tracking">
+      </div>
+      <div class="text-content">
+        <h3>Real Time Tracking</h3>
+        <p>View live stock levels across warehouses, bins, and channels instantly.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="picture-container">
+        <img src="{% static 'images/ims-reporting.jpg' %}" alt="Advanced Reporting">
+      </div>
+      <div class="text-content">
+        <h3>Advanced Reporting</h3>
+        <p>Generate demand forecasts, turnover analysis, and compliance reports.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="picture-container">
+        <img src="{% static 'images/ims-workflows.jpg' %}" alt="Automated Workflows">
+      </div>
+      <div class="text-content">
+        <h3>Automated Workflows</h3>
+        <p>Auto reorder, sync orders, and get email alerts to streamline operations.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DEMO CREDENTIALS -->
+<!--<section class="demo-credentials">
+  <div class="container">
+    <h2>Try It Now</h2>
+    <p><strong>Username:</strong> demoâ€ƒ<strong>Password:</strong> demo</p>
+  </div>
+</section>-->
+
+{% endblock %}

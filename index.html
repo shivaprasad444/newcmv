@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home – CMV Tech{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="static/css/index.css">
+
+<!-- HERO SECTION -->
+<header class="hero-section">
+  <div class="hero-text">
+    <h1>CMV Tech</h1>
+    <p>We bring futuristic solutions to modern businesses.</p>
+    <a href="#services" class="btn explore-btn">Explore Services</a>
+  </div>
+</header>
+
+<!-- HIGHLIGHT SECTION -->
+<section class="highlight-section">
+  <div class="highlight-text">
+    <h2>
+      Smarter data, better decisions <strong>elevate</strong><br>
+      your enterprise with our data engineering expertise!
+    </h2>
+  </div>
+</section>
+
+<!-- INDUSTRIES SECTION -->
+<section class="industries-section">
+  <div class="industries-container">
+    <h2>WHAT INDUSTRIES WE SERVE?</h2>
+    <div class="industry-grid">
+
+      {% comment "Repeat for each industry card" %}
+      <div class="industry-card">
+        <div class="card-front">
+          <h3>Automotive Plastics</h3>
+        </div>
+        <div class="card-back">
+          <p>A-surface and B-surface designs,<br>Mechanics of Materials, and Development.</p>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-front">
+          <h3>Automotive BIW</h3>
+        </div>
+        <div class="card-back">
+          <p>Our Body-in-White (BIW) solutions focus on structural integrity, crashworthiness, and weight optimization through advanced material selection and innovative manufacturing techniques. We leverage CAD, CAE, and FEA analysis to design robust BIW structures that meet stringent automotive regulations.</p>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-front">
+          <h3>Healthcare & Medical Plastics</h3>
+        </div>
+        <div class="card-back">
+          <p>Medical device design, diagnostics, and quality control expertise.</p>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-front">
+          <h3>Industrial Automation</h3>
+        </div>
+        <div class="card-back">
+          <p>Jigs, fixtures, robotics, and automation systems for smart manufacturing.</p>
+        </div>
+      </div>
+
+      <div class="industry-card">
+        <div class="card-front">
+          <h3>IT & Data Engineering</h3>
+        </div>
+        <div class="card-back">
+          <p>Cloud systems, data pipelines, AI engineering, and lifecycle analytics.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section class="services-section" id="services">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <a href="{% url 'consulting' %}" class="service-box consulting">
+      <div class="service-overlay">
+        <h3>Consulting</h3>
+        <p>Expert guidance to drive business transformation and strategic growth.</p>
+      </div>
+    </a>
+
+    <a href="{% url 'development' %}" class="service-box development">
+      <div class="service-overlay">
+        <h3>Development</h3>
+        <p>Custom software solutions, full-stack development, and integrations.</p>
+      </div>
+    </a>
+
+    <a href="{% url 'support' %}" class="service-box support">
+      <div class="service-overlay">
+        <h3>Support</h3>
+        <p>Reliable 24/7 technical support and maintenance services tailored to you.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <h2>Contact Us</h2>
+  <form method="POST" action="{% url 'contact' %}">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="static/css/products.css">
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>ATS &ndash; Applicant Tracking System</h1>
+      <p>Streamline your recruitment pipeline from job posting to onboarding.</p>
+      <a href="#" class="btn primary">Try Demo</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- DESCRIPTION SECTION -->
+<section class="description">
+  <div class="container">
+    <p>
+      Our Applicant Tracking System (ATS) centralizes all candidate data, automates communication, and provides actionable analytics to help you hire faster and smarter. From posting jobs to sending offers, manage every step in one platform.
+    </p>
+  </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section class="features">
+  <div class="container">
+
+    <div class="feature-item">
+      <div class="image-container">
+        <img src="{% static 'images/ats-job-posting.png' %}" alt="Job Posting">
+      </div>
+      <h3>Job Posting</h3>
+      <p>Publish openings to multiple job boards and social channels with one click.</p>
+    </div>
+
+    <div class="feature-item">
+      <div class="image-container">
+        <img src="{% static 'images/ats-candidate-db.png' %}" alt="Candidate Database">
+      </div>
+      <h3>Candidate Database</h3>
+      <p>Search and filter applicants by skills, experience, and custom tags.</p>
+    </div>
+
+    <div class="feature-item">
+      <div class="image-container">
+        <img src="{% static 'images/ats-interview-scheduling.png' %}" alt="Interview Scheduling">
+      </div>
+      <h3>Interview Scheduling</h3>
+      <p>Coordinate calendars and send automated invites to candidates and interviewers.</p>
+    </div>
+
+    <div class="feature-item">
+      <div class="image-container">
+        <img src="{% static 'images/ats-offer-management.png' %}" alt="Offer Management">
+      </div>
+      <h3>Offer Management</h3>
+      <p>Create, send, and track offer letters and e-signatures in one place.</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+{% endblock %}

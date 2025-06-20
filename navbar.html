@@ -1,0 +1,37 @@
+{% load static %}
+<link rel="stylesheet" href="static/css/navbar.css">
+
+<nav class="navbar">
+  <div class="logo">
+    <img src="{% static 'images/cmv_logo_white_1.png' %}" alt="CMV Tech">
+  </div>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-icon">
+    <span></span><span></span><span></span>
+  </label>
+
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+
+    <li class="dropdown">
+      <a href="#">Services</a>
+      <ul class="dropdown-content">
+        <li><a href="{% url 'consulting' %}">Consulting</a></li>
+        <li><a href="{% url 'development' %}">Development</a></li>
+        <li><a href="{% url 'support' %}">Support</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a href="#">Products</a>
+      <ul class="dropdown-content">
+        <li><a href="{% url 'IMS' %}">IMS</a></li>
+        <li><a href="{% url 'ATS' %}">ATS</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
