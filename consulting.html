@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/services.css' %}">
+<link rel="stylesheet" href="static/css/services.css">
 
 <!-- HERO SECTION -->
 <section class="page-hero">
@@ -32,7 +32,7 @@
     <!-- CARD 1 -->
     <div class="support-card">
       <div class="support-image">
-        <img src="static/css/support-ticketing.jpg" alt="Flexible Staffing" />
+        <img src="static/images/consulting-hiring.jpg" alt="Flexible Staffing" />
       </div>
       <div class="support-text">
         <h3>Flexible Staffing</h3>
@@ -47,7 +47,7 @@
     <!-- CARD 2 -->
     <div class="support-card">
       <div class="support-image">
-        <img src="static/css/support-ticketing.jpg" alt="Project-based Consulting" />
+        <img src="static/images/consulting-projects.png" alt="Project-based Consulting" />
       </div>
       <div class="support-text">
         <h3>Project-based Consulting</h3>
@@ -61,7 +61,7 @@
     <!-- CARD 3 -->
     <div class="support-card">
       <div class="support-image">
-        <img src="static/css/support-ticketing.jpg" alt="Strategic Talent Advisory" />
+        <img src="static/images/consulting-strategy.jpg" alt="Strategic Talent Advisory" />
       </div>
       <div class="support-text">
         <h3>Strategic Talent Advisory</h3>
@@ -84,28 +84,29 @@
 
       <!-- CARD 1 -->
       <div class="training-card">
-        <div class="training-bg" style="background-image: url('{% static "images/train-genai.jpg" %}');"></div>
+        <div class="training-bg" style="background-image: url('static/images/train-genai.jpg');>
+        </div>
         <div class="training-label"><h3>GenAI Engineering</h3></div>
         <div class="training-overlay"><p>Train your team in prompt engineering, LLM development, and AI integration best practices.</p></div>
       </div>
 
       <!-- CARD 2 -->
       <div class="training-card">
-        <div class="training-bg" style="background-image: url('{% static "images/train-fullstack.jpg" %}');"></div>
+        <div class="training-bg" style="background-image: url('static/images/train-fullstack.jpg');></div>
         <div class="training-label"><h3>Java/Python Full Stack</h3></div>
         <div class="training-overlay"><p>Master frontend and backend with JavaScript, React, Spring Boot, Django, and more.</p></div>
       </div>
 
       <!-- CARD 3 -->
       <div class="training-card">
-        <div class="training-bg" style="background-image: url('{% static "images/train-dataeng.jpg" %}');"></div>
+        <div class="training-bg" style="background-image: url('static/images/train-dataeng.jpg');></div>
         <div class="training-label"><h3>Data Engineering</h3></div>
         <div class="training-overlay"><p>Learn PySpark, SQL, Airflow, and cloud-native data workflows with real-world projects.</p></div>
       </div>
 
       <!-- CARD 4 -->
       <div class="training-card">
-        <div class="training-bg" style="background-image: url('{% static "images/train-dataanalyst.jpg" %}');"></div>
+        <div class="training-bg" style="background-image: url('static/images/train-dataanalyst.jpg');></div>
         <div class="training-label"><h3>Data Analyst</h3></div>
         <div class="training-overlay"><p>Get skilled in BI tools, Excel, SQL, and data storytelling. Suitable for all experience levels.</p></div>
       </div>
